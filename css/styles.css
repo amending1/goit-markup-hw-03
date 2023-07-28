@@ -1,3 +1,18 @@
+.container {
+  max-width: 1158px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.header-wrapper {
+  display; flex;
+   height: 72px;
+flex-shrink: 0;
+justify-content: space-between;
+border-bottom: 1px solid #E7E9FC;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
@@ -14,16 +29,31 @@ ul{
 
 .main-order-service {
   background: #2e2f42;
+  text-align: center;
+  
 }
 
-.main-order-service-text {
+.main-order-service > .main-order-service-text {
   color: #fff;
   text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+   
 }
+
+.main-content-images{
+width: 1440px;
+display: flex;
+justify-content: space-between;
+}
+
+
 
 .button-main {
   color:#FFF;
@@ -34,6 +64,8 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.64px;
 cursor: pointer;
+display: inline-block;
+padding: 16px 32px;
 }
 
 button:hover {
@@ -57,6 +89,26 @@ letter-spacing: 0.64px;
 cursor: pointer;
 }
 
+.image-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-portfolio-card {
+  display: flex;
+   flex-direction: column;
+  align-items: flex-start;
+    flex-shrink: 0;
+  border: 1px solid #E7E9FC;
+background: #FFF;
+}
+
+.image-portfolio-items {
+  display: block;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -76,7 +128,12 @@ nav {
   letter-spacing: 0.32px;
 }
 
-.menu-link{
+.menu-link {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-link-items {
 color: #2E2F42;
 font-family: Roboto;
 font-size: 16px;
@@ -86,7 +143,11 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 }
 
-.adress-link {
+.address-link {
+  display: flex;
+}
+
+.address-link-items {
   color: #434455;
 font-family: Roboto;
 font-size: 16px;
@@ -96,6 +157,16 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 }
 
+.main-content {
+     display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .main-content > li {
+    width: 264px;
+        }
+
 
 .main-content-list {
   color: #2E2F42;
@@ -103,6 +174,7 @@ letter-spacing: 0.32px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin:  0 0 8px 0;
 }
 
 .main-content-items {
@@ -114,6 +186,23 @@ letter-spacing: 0.32px;
 
 .main-team {
   background: #f4f4fd;
+}
+
+.main-team-card {
+display: inline-flex;
+gap: 24px;
+}
+
+.main-team-card-items {
+display: inline-flex;
+padding-bottom: 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+border-radius: 0px 0px 4px 4px;
+background: #FFF;
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .main-team-names {
@@ -166,10 +255,38 @@ letter-spacing: 0.32px;
   text-transform: capitalize;
 }
 
+.button-container {
+  display: flex;
+  padding: 12px 24px;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+border: 1px solid #E7E9FC;
+background: #F4F4FD;
+width: 68px;
+height: 24px;
+padding: 12px 24px 12px 24px;
+}
+
 footer {
-  background-color: #2e2f42;
+background-color: #2e2f42;
+width: 1440px;
+height: 312px;
+  }
+  
+.footer-text {
+  display: block;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  width: 264px;
+  font-family: Roboto;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+
+.footer-logo {
+  display: inline-block;
+  padding-top: 101.5px;
 }
