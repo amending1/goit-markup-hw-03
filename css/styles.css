@@ -9,16 +9,8 @@
   padding: 0px 15px;
 }
 
-.container-main {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 120px 15px 0 15px;
-}
-
-.container-porfolio {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px 120px 15px;
+section {
+  padding: 120px 15px;
 }
 
 .header-wrapper {
@@ -280,8 +272,8 @@ nav {
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  margin: 96px 0 72px 0;
+  column-gap: 24px;
+  padding: 0 0 72px 0;
 }
 
 .button-portfolio {
